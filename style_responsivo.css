@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('imagens/imagem\ de\ inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgb(255, 0, 128);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px;
+    padding: 10px 20px;
+    width: 100%;
+
+    .imagem-topo {
+        height: 60px;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+nav {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+
+    ul {
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+
+        li {
+            display: inline-block;
+            margin: 15px;
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                transition: 1s all;
+            }
+
+            a:hover {
+                background-color: none;
+                color: rgb(249, 168, 215);
+            }
+
+            .btn {
+                font-size: 20px;
+                background: linear-gradient(to right, rgb(255, 142, 200), rgb(255, 45, 164));
+                padding: 10px 10px 10px 10px;
+                border-radius: 15px;
+                transition: 1s all;
+            }
+
+            .btn:hover {
+                background: linear-gradient(to right, rgb(255, 45, 164), rgb(255, 142, 200));
+                ;
+                color: white;
+
+            }
+
+        }
+    }
+}
+
+footer {
+    background-color: rgb(255, 0, 128);
+    padding: 20px 0px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px;
+    width: 100%;
+  
+    p   {
+        text-align: center;
+    }
+
+    .Milk-Mania {
+        height: 60px;
+    }
+    
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    .col {
+        img {
+            width: 100%;
+            margin-top: 100px;
+        }
+    }
+
+    p {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+
+    .banner {
+
+        h2,
+        h1 {
+            margin: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+        }
+
+        .btn {
+            background: linear-gradient(to right, rgb(255, 142, 200), rgb(255, 45, 164));
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, rgb(255, 45, 164), rgb(255, 142, 200));
+            color: white;
+            transition: 2s;
+        }
+    }
+
+}
+
+#sobre {
+    h1 {
+        text-transform: uppercase;
+        margin: 30px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 250px;
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+
+}
+
+#historia {
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        margin: 20px;
+        color: rgb(155, 22, 77);
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 10px;
+    }
+
+    .col {
+        box-shadow: 0 0 30px rgb(255, 0, 128);
+        border-radius: 15px;
+        margin: 5px;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(155, 22, 77);
+        text-align: center;
+        font-weight: 200px;
+
+    }
+
+}
+
+#imagem {
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 250px;
+        margin-bottom: 150px;
+    }
+
+    .captura {
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagemcaptura {
+        height: auto;
+        width: 600px;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Responsividade básica */
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilo da seção de contato */
+#contato {
+    background-color: none;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+#contato h1 {
+    font-size:70px;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    color: rgb(0, 0, 0);
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.form-contato input,
+.form-contato button {
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-contato button {
+    background-color: rgb(255, 0, 128);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.form-contato button:hover {
+    background-color: rgb(200, 0, 100);
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        width: 95%;
+        margin: 150px auto 0;
+    }
+
+    .imagem-topo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    #imagem .captura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagem .imagemcaptura {
+        width: 80%;
+        height: auto;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        margin: 10px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin: 10px auto;
+    }
+
+    #nav-menu.active {
+        display: block;
+    }
+
+    .form-contato {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+        margin: 100px auto 0;
+    }
+
+    header,
+    footer {
+        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-topo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #historia .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner .btn {
+        font-size: 25px;
+        padding: 8px 15px;
+    }
+
+    footer .Milk-Mania {
+        height: 40px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .form-contato {
+        width: 90%;
+    }
+
+    .form-contato input,
+    .form-contato button {
+        font-size: 14px;
+    }
+
+    #contato h1 {
+        font-size: 30px;
+    }
+}
+  

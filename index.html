@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        nav.classList.toggle('active');
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO MILK-MANIA: A fuga da Gatinha</title>
+    <link href="style_responsivo.css" rel="stylesheet">
+    <link href="imagens/" rel="imagem">
+</head>
+
+<body>
+    <header>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <a href="index.html" title="MILK-MANIA">
+            <img src="imagens/imagem-topo.png" class="imagem-topo" alt="MILK-MANIA">
+        </a>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                    <a href="#" title="Home">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre" title="Sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#imagem" title="Imagens">Imagens</a>
+                </li>
+                <li>
+                    <a href="#contato" title="Contato">Contato</a>
+                </li>
+                <li>
+                    <a href="jogar.html" title="Jogar" class="btn">Jogar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="grid-2">
+                <div class="col">
+                    <h2>Procurando Diversão?</h2>
+                    <h1>
+                        Conheça nosso jogo Milk-Mania
+                    </h1>
+                    <p>
+                        <a href="#jogar" title="Jogar" class="btn">
+                            Jogar
+                        </a>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="imagens/image1-42.png" class="img">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h1>Sobre o Jogo</h1>
+        </section>
+
+        <section id="historia">
+            <div class="grid-3">
+                <div class="col">
+                    <h2> 1 <br> </h2>
+                    <hr>
+                    <h2> <br> A história começou! </h2>
+                    <p> Em mundo pixelado e colorido, uma gatinha chamada Milu está faminta e precisa coletar todas
+                        as
+                        garrafinhas de leite espalhada pelo labirinto. <br> <br> </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h2> 2 <br> </h2>
+                    <hr>
+                    <p> <br> Mas há um grande problema: O malvado exército de Cães fantasmas chamados: Rex, Batata,
+                        Spike e Zoe. Estão a solta e farão de tudo para captura-lá antes que ela consiga sua
+                        refeição.
+                        <br> <br>
+                    </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h2> 3 <br> </h2>
+                    <hr>
+                    <p> <br> Eles foram amaldiçoados e agora tem a missão de impedir que qualquer felino venha se
+                        alimentar ali, então eles com suas diferentes personalidades se juntam em busca do mesmo
+                        objetivo. <br> <br> </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h2> 4 <br> </h2>
+                    <hr>
+                    <p> <br> Mas Milu tem uma grande chanche de se vingar! Em algumas partes do grande e assustador
+                        labirinto, existem tigelas de leite especial. Se ela beber, por alguns segundos ela se torna
+                        uma
+                        Super gata, podendo paralizar de medo esses cães fantasmas. <br> <br> </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h2> 5 <br> </h2>
+                    <hr>
+                    <p> <br> Se Milu conseguir coletar todas as garrafas de leite antes de ser capturada, ela avança
+                        para o próximo nível, onde será mais complicado de se alimentar. E se for pego... o jantar
+                        dos
+                        cachorros naquela noite será um pouco mais interessante! <br> <br> </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h2> 6 <br> </h2>
+                    <hr>
+                    <p> <br> Será que Milu conseguirá escapar e beber todo o leite até completar as fases? Ou será
+                        capturada pelos cães antes de completar sua missão? <br> <br> </p>
+                    <hr>
+                    <h2> Use suas habilidades e ajude Milu a completar essa grande missão!</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagem">
+            <div class="grid-4">
+                <div class="col">
+                    <h1>Imagens do Jogo</h1>
+                    <div class="captura">
+                        <img src="imagens/capturas do jogo/iniciocaptura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/historiacaptura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/fase1captura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/fase1escapecaptura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/fase2captura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/fase2escapecaptura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/gameovercaptura.png" class="imagemcaptura">
+                        <img src="imagens/capturas do jogo/vitoriacaptura.png" class="imagemcaptura">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h1>Contato</h1>
+            <form action="#" method="post" class="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(99) 99999-9999">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <img src="imagens/imagem-topo.png" class="Milk-Mania">
+        </p>
+        <p>
+            Desenvolvido por Isabelly Camargo = Todos os Direitos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
