@@ -26,16 +26,16 @@
         <nav id="nav-menu">
             <ul>
                 <li>
-                    <a href="#" title="Home">Início</a>
+                    <a href="#" title="Home" onclick="toggleMenu()">Início</a>
                 </li>
                 <li>
-                    <a href="#sobre" title="Sobre">Sobre</a>
+                    <a href="#sobre" title="Sobre" onclick="toggleMenu()">Sobre</a>
                 </li>
                 <li>
-                    <a href="#imagem" title="Imagens">Imagens</a>
+                    <a href="#imagem" title="Imagens" onclick="toggleMenu()">Imagens</a>
                 </li>
                 <li>
-                    <a href="#contato" title="Contato">Contato</a>
+                    <a href="#contato" title="Contato" onclick="toggleMenu()">Contato</a>
                 </li>
                 <li>
                     <a href="jogar.html" title="Jogar" class="btn">Jogar</a>
@@ -48,7 +48,7 @@
         <section class="banner">
             <div class="grid-2">
                 <div class="col">
-                    <h2>Procurando Diversão?</h2>
+                    <h2>Em busca de diversão?</h2>
                     <h1>
                         Conheça nosso jogo Milk-Mania
                     </h1>
@@ -103,7 +103,7 @@
                     <p> <br> Mas Milu tem uma grande chanche de se vingar! Em algumas partes do grande e assustador
                         labirinto, existem tigelas de leite especial. Se ela beber, por alguns segundos ela se torna
                         uma
-                        Super gata, podendo paralizar de medo esses cães fantasmas. <br> <br> </p>
+                        Super gata, podendo fazer esses cães fantasmas fugirem de medo. <br> <br> </p>
                     <hr>
                 </div>
                 <div class="col">
@@ -155,6 +155,9 @@
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" required placeholder="(99) 99999-9999">
+
+                <label for="mensagem">Mensagem:</label>
+                <input type="mensagem" id="mensagem" name="mensagem" required placeholder="Mensagem">
 
                 <button type="submit">Enviar</button>
             </form>

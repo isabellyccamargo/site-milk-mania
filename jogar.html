@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        nav.classList.toggle('active');
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO MILK-MANIA: A fuga da Gatinha</title>
+    <link href="style_responsivo.css" rel="stylesheet">
+    <link href="imagens/" rel="imagem">
+</head>
+
+<body class="body-game">
+    <header>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <a href="index.html" title="MILK-MANIA">
+            <img src="imagens/imagem-topo.png" class="imagem-topo" alt="MILK-MANIA">
+        </a>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html" title="Home">Início</a>
+                </li>
+                <li>
+                    <a href="jogar.html" title="Jogar" class="btn">Jogar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="iframe-container">
+        <iframe src="https://isabellyccamargo.github.io/game-milk-mania/" width="600px" height="453px" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <footer class="footer-game">
+        <p>
+            <img src="imagens/imagem-topo.png" class="Milk-Mania">
+        </p>
+        <p>
+            Desenvolvido por Isabelly Camargo = Todos os Direitos reservados.
+        </p>
+    </footer>
+
+</body>
