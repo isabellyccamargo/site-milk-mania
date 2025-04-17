@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <script>
-    function toggleMenu() {
+    function abrirFecharMenu() {
         const nav = document.getElementById('nav-menu');
         nav.classList.toggle('active');
     }
@@ -15,27 +15,31 @@
     <title>JOGO MILK-MANIA: A fuga da Gatinha</title>
     <link href="style_responsivo.css" rel="stylesheet">
     <link href="imagens/" rel="imagem">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <header>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <button class="hamburger" onclick="abrirFecharMenu()">☰</button>
         <a href="index.html" title="MILK-MANIA">
             <img src="imagens/imagem-topo.png" class="imagem-topo" alt="MILK-MANIA">
         </a>
         <nav id="nav-menu">
             <ul>
                 <li>
-                    <a href="#" title="Home" onclick="toggleMenu()">Início</a>
+                    <a href="#" title="Home" onclick="abrirFecharMenu()">Início</a>
                 </li>
                 <li>
-                    <a href="#sobre" title="Sobre" onclick="toggleMenu()">Sobre</a>
+                    <a href="#sobre" title="Sobre" onclick="abrirFecharMenu()">Sobre</a>
                 </li>
                 <li>
-                    <a href="#imagem" title="Imagens" onclick="toggleMenu()">Imagens</a>
+                    <a href="#imagem" title="Imagens" onclick="abrirFecharMenu()">Imagens</a>
                 </li>
                 <li>
-                    <a href="#contato" title="Contato" onclick="toggleMenu()">Contato</a>
+                    <a href="#contato" title="Contato" onclick="abrirFecharMenu()">Contato</a>
+                </li>
+                <li>
+                    <a href="criador.html" title="Criadora">Criadora</a>
                 </li>
                 <li>
                     <a href="jogar.html" title="Jogar" class="btn">Jogar</a>
@@ -43,17 +47,17 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section class="banner">
             <div class="grid-2">
                 <div class="col">
-                    <h2>Em busca de diversão?</h2>
+                    <h2 class="titulo-diversao"> Em busca de diversão?</h2>
                     <h1>
                         Conheça nosso jogo Milk-Mania
                     </h1>
                     <p>
-                        <a href="#jogar" title="Jogar" class="btn">
+                        <a href="jogar.html" title="Jogar" class="btn">
                             Jogar
                         </a>
                     </p>
@@ -172,7 +176,22 @@
             Desenvolvido por Isabelly Camargo = Todos os Direitos reservados.
         </p>
     </footer>
-
+    <script>
+        document.querySelector(".form-contato").addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+    Swal.fire({
+        icon: 'success',
+        title: 'Mensagem enviada!',
+        text: 'Entraremos em contato em breve 😊',
+        background: '#fff0f5',
+        color: '#000',
+        confirmButtonColor: '#d63384',
+        timer: 2500,
+        showConfirmButton: false
+    });
+});
+    </script>   
 </body>
 
 </html>

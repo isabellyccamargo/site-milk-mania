@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<script>
+    function abrirFecharMenu() {
+        const nav = document.getElementById('nav-menu');
+        nav.classList.toggle('active');
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO MILK-MANIA: A fuga da Gatinha</title>
+    <link href="style_responsivo.css" rel="stylesheet">
+    <link href="imagens/" rel="imagem">
+</head>
+
+<body class="body">
+    <header>
+        <button class="hamburger" onclick="abrirFecharMenu()">☰</button>
+        <a href="index.html" title="MILK-MANIA">
+            <img src="imagens/imagem-topo.png" class="imagem-topo" alt="MILK-MANIA">
+        </a>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html" title="Home">Início</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="criadora">
+        <div class="criadora-grid">
+          <div class="criadora-col">
+            <img src="imagens/70684D15-E239-409C-BD4B-14A0BE2F5A1D.JPG" class="minhaFoto" alt="Isabelly" >
+            <div class="descricao">
+              <p>
+                 Isabelly Caroline Camargo tem 18 anos, natural de Primavera do Leste-MT e atualmente mora na cidade de Araruna.
+                 Cursando a faculdade de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS), que se interessou diante ao
+                  novo Ensino Médio que teve uma matéria em que mostrava pequenas coisas de programação, então depois de formada deciciu ir atrás do que desejava. Com uma jornada que está apenas começando,
+                   mas já tem mostrado um universo cheio de possibilidades. <br>
+                 Escolheu fazer um jogo estilo Pac-Man porque se interessa nesses jogos retrô  que são muito legais e desafiadores. 
+                 Além de ser um clássico super conhecido, o Pac-Man tem uma mecânica simples, mas que envolve bastante raciocínio lógico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer-game">
+        <p>
+            <img src="imagens/imagem-topo.png" class="Milk-Mania">
+        </p>
+        <p>
+            Desenvolvido por Isabelly Camargo = Todos os Direitos reservados.
+        </p>
+    </footer>
+
+</body>
